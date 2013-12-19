@@ -1,3 +1,6 @@
+# Da tunes
+alias pianobar='pianokeys && pianobar'
+
 # Easier navigation: .., ..., ~ and -
 alias ..="cd .."
 alias cd..="cd .."
