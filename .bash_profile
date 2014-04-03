@@ -5,6 +5,11 @@ for file in ~/.{extra,bash_prompt,exports,aliases,functions}; do
 done
 unset file
 
+# init git complete
+if [ -f ~/.git-completion.bash ]; then
+  . ~/.git-completion.bash
+fi
+
 # init z   https://github.com/rupa/z
 . ~/code/z/z.sh
 
