@@ -1,6 +1,9 @@
 # Da tunes
 alias pianobar='pianokeys && pianobar'
 
+# reload
+alias reload="source ~/.bash_profile"
+
 # Easier navigation: .., ..., ~ and -
 alias ..="cd .."
 alias cd..="cd .."
