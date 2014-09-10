@@ -1,3 +1,6 @@
+# morning checkin
+alias morning='open http://facebook.com && open http://hackaday.com && open http://www.reddit.com'
+
 # Da tunes
 alias pianobar='pianokeys && pianobar'
 
