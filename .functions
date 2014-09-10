@@ -3,6 +3,12 @@ function md() {
 	mkdir -p "$@" && cd "$@"
 }
 
+# open file with atom and scad for editing
+function scad(){
+	atom $1
+	open /Applications/OpenSCAD.app $1
+}
+
 
 # find shorthand
 function f() {
