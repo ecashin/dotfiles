@@ -5,7 +5,7 @@ function md() {
 
 # open file with atom and scad for editing
 function scad(){
-	atom $1
+	atom -n $1
 	open /Applications/OpenSCAD.app $1
 }
 
