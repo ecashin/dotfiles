@@ -1,8 +1,4 @@
-# morning checkin
-alias morning='open http://facebook.com && open http://hackaday.com && open http://www.reddit.com'
-
-# Da tunes
-alias pianobar='pianokeys && pianobar'
+alias vagrant_stopall="vagrant global-status | grep "running" | awk '{print $1}' | while read ln; do vagrant suspend $ln; done"
 
 # reload
 alias reload="source ~/.bash_profile"
