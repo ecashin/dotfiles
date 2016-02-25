@@ -4,7 +4,12 @@
 if [[ "$OSTYPE" == "linux-gnu" ]]; then
   command -v apt-get >/dev/null 2>&1 && {
     echo "Apt-Get Found installing the essentials" >&2;
-    sudo apt-get install -y git vim htop 
+    sudo apt-get install -y git vim htop
+  }
+
+  command -v yum >/dev/null 2>&1 && {
+    echo "Apt-Get Found installing the essentials" >&2;
+    sudo yum install -y git vim
   }
 elif [[ "$OSTYPE" == "darwin"* ]]; then
   ruby <(curl -fsSkL raw.github.com/mxcl/homebrew/go)
