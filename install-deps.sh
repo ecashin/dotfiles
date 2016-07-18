@@ -12,7 +12,7 @@ if [[ "$OSTYPE" == "linux-gnu" ]]; then
     sudo yum install -y git vim
   }
 elif [[ "$OSTYPE" == "darwin"* ]]; then
-  ruby <(curl -fsSkL raw.github.com/mxcl/homebrew/go)
+  ruby < (curl -fsSkL raw.github.com/mxcl/homebrew/go)
   ./brew
 fi
 
