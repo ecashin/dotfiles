@@ -11,9 +11,6 @@ if [[ "$OSTYPE" == "linux-gnu" ]]; then
     echo "Yum Found installing the essentials" >&2;
     sudo yum install -y git vim
   }
-elif [[ "$OSTYPE" == "darwin"* ]]; then
-  ruby < (curl -fsSkL raw.github.com/mxcl/homebrew/go)
-  ./brew
 fi
 
 # Install tab complete for git
