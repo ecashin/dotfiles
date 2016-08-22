@@ -3,6 +3,18 @@ function md() {
 	mkdir -p "$@" && cd "$@"
 }
 
+# decompile android apk to view the source
+function decompile_apk(){
+  local projectName="${1%%.*}"
+  mkdir -p $projectName/android/
+  mv $1 $projectName/android/${projectName}.zip
+  cd $projectName/android/
+  unzip ${projectName}.zip
+	rm ${projectName}.zip
+	d2j-dex2jar *.dex
+	open ./
+}
+
 # find shorthand
 function f() {
     find . -name "$1"
