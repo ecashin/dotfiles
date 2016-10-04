@@ -13,5 +13,10 @@ export HISTCONTROL=ignoredups
 HISTTIMEFORMAT='%F %T '
 export HISTTIMEFORMAT
 
-# Make some commands not show up in history
-export HISTIGNORE="ls:ls *:cd:cd -:pwd;exit:date:* --help"
+# Make some commands not show up in history, while supporting
+# the full-path-plus-history workflow:
+#
+#   ls /var/log/foo/log.gz.^I^I20161004.gz
+#   zless !$
+#
+export HISTIGNORE="ls:cd:cd -:pwd;exit:date:* --help"
